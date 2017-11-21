@@ -1,0 +1,47 @@
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+<script>
+    function addNumbers() {
+        var input1 = document.getElementById("input1").value;
+        var input2 = document.getElementById("input2").value;
+        var result = parseInt(input1) + parseInt(input2);
+        document.getElementById("output").innerHTML = result;
+    }
+    function subtractNumbers() {
+        var input1 = document.getElementById("input1").value;
+        var input2 = document.getElementById("input2").value;
+        var result = parseInt(input1) - parseInt(input2);
+        document.getElementById("output").innerHTML = result;
+    }
+    function devideNumbers() {
+        var input1 = document.getElementById("input1").value;
+        var input2 = document.getElementById("input2").value;
+        var result = parseInt(input1) / parseInt(input2);
+        document.getElementById("output").innerHTML = result;
+    }
+    function multiplyNumbers() {
+        var input1 = document.getElementById("input1").value;
+        var input2 = document.getElementById("input2").value;
+        var result = parseInt(input1) * parseInt(input2);
+        document.getElementById("output").innerHTML = result;
+    }
+
+</script></head>
+
+
+
+
+<body>
+    <input type="text" id="input1">
+    <input type="text" id="input2">
+    <button onclick="addNumbers()">Add Numbers</button>
+    <button onclick="subtractNumbers()">Subtract Numbers</button>
+    <button onclick="devideNumbers()">Devide Numbers</button> 
+    <button onclick="multiplyNumbers()">Multiply Numbers</button>     
+    <p id="output"></p>
+
+
+</body></html>

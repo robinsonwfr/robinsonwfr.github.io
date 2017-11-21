@@ -1,0 +1,37 @@
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+<script>
+    function createrifle (){
+        var name = document.getElementById("name").value;
+        var age = document.getElementById("age").value;
+        var caliber = document.getElementById("caliber").value;
+        var stock = document.getElementById("stock").value;
+
+        document.getElementById("listOfrifles").innerHTML += "<li>" + name + " " + age + " " + caliber +" " + stock + "</li>";
+
+        document.getElementById("name").value = "";
+        document.getElementById("age").value = "";
+        document.getElementById("caliber").value = "";
+        document.getElementById("stock").value = "";
+    }
+</script></head>
+
+
+<body>
+    Name:
+    <input type="text" id="name"> Age:
+    <input type="text" id="age"> Caliber:
+    <input type="text" id="caliber"> Stock:
+    <input type="text" id="stock">
+    <button onclick="createrifle()">create rifle</button>
+
+    <ol id="listOfrifles">
+    </ol>
+
+
+</body>
+
+</html>
